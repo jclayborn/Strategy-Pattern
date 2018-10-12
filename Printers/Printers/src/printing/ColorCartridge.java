@@ -22,5 +22,10 @@ public class ColorCartridge implements ICartridge {
 	public boolean emptyInk(){
 		return percentage == 0;
 	}
+
+    public String addInk(int inkToAdd){
+        percentage += inkToAdd;
+        return "Thanks for refilling the cartridge!"
+    }
 	
 }
