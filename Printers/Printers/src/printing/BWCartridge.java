@@ -25,4 +25,9 @@ public class BWCartridge implements ICartridge {
 		return percentage == 0;
 	}
 	
+    @Override
+    public String addInk(int inkToAdd){
+        percentage += inkToAdd;
+        return "Thanks for refilling the cartridge!"
+    }
 }

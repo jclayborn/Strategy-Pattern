@@ -1,7 +1,7 @@
 package printing;
 
 public class PaperTray {
-	int pages = 0;
+	private int pages = 0;
 	
 	public void addPaper(int count){
 		pages += count;

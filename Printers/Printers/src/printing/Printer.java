@@ -21,7 +21,6 @@ public class Printer<T extends ICartridge> implements IMachine{
 
 	@Override
 	public void TurnOff() {
-		// TODO Auto-generated method stub
 		machine.TurnOff();
 	}
 	
@@ -36,12 +35,11 @@ public class Printer<T extends ICartridge> implements IMachine{
 		System.out.println(cartridge.toString());
 		System.out.println(cartridge.getFillPercentage());
 		
-		String onStatus = "";
+		String onStatus = "is Off!";
 		if(machine.isOn()){
 			onStatus = " is On!";
-		}else{
-			onStatus = " is Off!";
 		}
+
 		String textToPrint = modelNumber + onStatus;
 		
 		while (copies > 0 && !paperTray.isEmpty() && !cartridge.emptyInk()){
@@ -66,7 +64,6 @@ public class Printer<T extends ICartridge> implements IMachine{
 	}
 
 	public void loadPaper(int count) {
-		// TODO Auto-generated method stub
 		paperTray.addPaper(count);
 	}
 
