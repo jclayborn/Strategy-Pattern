@@ -4,4 +4,5 @@ public interface ICartridge {
 	public String getFillPercentage();
 	public boolean emptyInk();
 	public void useInk();
+    public String addInk(int);
 }
