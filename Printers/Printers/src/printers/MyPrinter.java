@@ -13,6 +13,6 @@ public class MyPrinter {
 		myPrinter.print(8);
 		myPrinter.switchCartridge(new BWCartridge(), "Cartridge switched!");
 		myPrinter.print(11);
-		
+		myPrinter.addInk(12);
 	}
 }
